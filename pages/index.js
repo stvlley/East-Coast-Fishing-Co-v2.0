@@ -1,11 +1,14 @@
 import Head from "next/head"
 import Image from "next/image"
+import Link from "next/link"
 import Footer from './components/Footer'
+import Navbar from "./components/Navbar"
 
 const Home = () => {
 
     return (
         <div>
+            <Navbar />
         <section className="relative bg-white">
             <img
                 className="absolute inset-0 object-[75%] sm:object-[25%] object-cover w-full h-full opacity-25 sm:opacity-100"
