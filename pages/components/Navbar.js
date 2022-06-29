@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import mapSVG from '/Users/stvlley/east-coast-fishing-co-v2.0/public/mapSVG.svg'
 
 export default function Navbar() {
     return (
@@ -8,18 +10,20 @@ export default function Navbar() {
                 href='/'>East Coast Fishing Co.
             </Link>
 
-            <Link className="flex flex-1 w-0 lg:hidden sm:text-center"
-                href='/'>Map
+            <ul className='space-x-8 text-sm font-medium justify-center'>
+            <Link href='/map'>
+                    Home
             </Link>
-            <Link className="flex flex-1 w-0 lg:hidden sm:text-center"
+            <Link 
                 href='/'>Profile
             </Link>
-            <Link className="flex flex-1 w-0 lg:hidden sm:text-center"
-                href='/'>About
+            <Link 
+                href='/about'>About
             </Link>
-            <Link className="flex flex-1 w-0 lg:hidden sm:text-center"
+            <Link 
                 href='/'>Login
             </Link>
+            </ul>
         </nav>
     )
 }
